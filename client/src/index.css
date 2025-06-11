@@ -6,10 +6,19 @@ body {
     @apply bg-zinc-900 text-gray-200;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 .custom-spiral-bg {
     background: radial-gradient(ellipse at center, rgba(255, 0, 255, 0.162) 0%, rgb(24, 24, 27) 60%);
-    position: relative;
-    overflow: hidden;
+    /* position: relative;
+    overflow: hidden; */
 }
 
 .custom-spiral-bg::before {
